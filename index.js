@@ -88,6 +88,7 @@ GAME.appendChild(rock);
     if (parseInt(rock.style.top) > 360 ){
        if (checkCollision(rock)){
          endGame();
+         return true
        }
     }
 
