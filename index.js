@@ -85,11 +85,9 @@ GAME.appendChild(rock);
       top = top + 2;
       rock.style.top = `${top}px`
     }
-    //if (parseInt(rock.style.top) > 360 ){
        if (checkCollision(rock)){
          endGame();
        }
-    //}
 
    if (top >= 400){
       rock.remove();
